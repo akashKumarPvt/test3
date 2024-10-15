@@ -24,7 +24,7 @@ jobs:
 
       - name: Build Docker image for ${{ matrix.app }}
         run: |
-          docker build -t ${{ matrix.app }} ./ ${{ matrix.app }}
+          docker build -t ${{ matrix.app }} ./${{ matrix.app }}
 
       - name: Run Docker container for ${{ matrix.app }}
         run: |
